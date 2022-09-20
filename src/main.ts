@@ -1,5 +1,5 @@
 import './style.css';
-const confetti = require('canvas-confetti');
+// import {confetti} from 'canvas-confetti';
 // Import the functions you need from the SDKs you need
 import {initializeApp} from 'firebase/app';
 import {fetchAndActivate, getRemoteConfig, getValue} from 'firebase/remote-config';
@@ -77,6 +77,7 @@ function randomInRange(min: number, max: number) {
 }
 
 function showConfetti() {
+    // @ts-ignore
     confetti({
         angle: randomInRange(55, 125),
         spread: randomInRange(50, 70),
